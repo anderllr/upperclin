@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { Button } from "reactstrap";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
@@ -18,14 +18,12 @@ import {
 } from "actions/Auth";
 import CircularProgress from "components/CircularProgress";
 
-import logo from "assets/images/logo.png";
-
-class SignIn extends React.Component {
+class SignIn extends Component {
 	constructor() {
 		super();
 		this.state = {
 			email: "demo@example.com",
-			password: "demo#123"
+			password: "demo#1234"
 		};
 	}
 
